@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traductor de Números a Letras</title>
-    
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="script.js"></script>
 </head>
+
 <body class="container my-5">
     <h1 class="text-center">Traductor de Números a Letras</h1>
-    
+
     <div class="form-group">
         <label for="numero">Introduce un número:</label>
-        <input type="text" class="form-control" id="numero" placeholder="Escribe un número">
+        <input type="number" class="form-control" id="numero" placeholder="Escribe un número" required>
     </div>
-    
-    <button class="btn btn-primary" onclick="traducir()">Traducir</button>
-    
+
+    <button class="btn btn-primary" onclick="traducir()">Traducir en español</button>
+    <button class="btn btn-dark" onclick="traducirAIngles()">Translate in english</button>
+    <button class="btn btn-danger" onclick="limpiar()">Limpiar</button>
+
     <p id="resultado" class="mt-4"></p>
 
 
@@ -25,4 +29,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
